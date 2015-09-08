@@ -1,0 +1,43 @@
+<body bgcolor="FFFFCC"></body>
+<h3>TCP Packet Delay Help</h3><br>
+A network covert channel is a mechanism that can be used
+to leak information across a network in violation of a security 
+policy and in a manner that can be dificult to detect.
+Specific in the Tcp Packet Delay Covert Channel we can hide 
+information on the distance time between two continues packets.
+For example if the time between two continues packets is less than 100ms 
+we assume that transmited the bit zero, in addition if the above time is 
+more than 100 we assume that transmeted the bit one.
+<table>
+<tr>
+<td  align='center' colspan=3><b>Recommended Delays</b></td>
+</tr>
+<tr>
+<td></td>
+<td>Local Network</td>
+<td>Internet</td>
+</tr>
+<tr>
+
+<td><a href = "res://zerobitdelay" >Zero Bit Delay</a></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href = "res://onebitdelay" >One Bit Delay</a></td>
+<td>100</td>
+<td>3000</td>
+</tr>
+<tr>
+<td><a href = "res://messagetimeout" >Message Time out</a></td>
+<td>200</td>
+<td>6000</td>
+</tr>
+</table>
+<ul>
+<li>If some values of the above table reduce, the transmition may occure some erorrs.</li>
+<li>Its  also recommended the field 'Silent Interval' always checked to dismish synchronization problems which involves transmition errors.</li>
+</ul>
+<h4>Related Help Links:<h4>
+<h4>Other Help Links:<h4>
+<a href = "res://main" >Covert Channel General</a><br>

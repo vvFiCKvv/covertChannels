@@ -1,0 +1,17 @@
+<body bgcolor="FFFFCC"></body>
+<h3>midle Start Of Frame Help</h3><br>
+This is a method to solve Synchronization Problem.
+As a precaution against low levels of jitter in the network,
+each packet is sent in the middle of the timing interval.
+Moreover, upon receipt of every SOF packet, the receiver
+aligns itself with the newly received SOF by assuming that
+the SOF arrived exactly in the middle of the timing interval.
+This aligns the sender and receiver timing windows and in
+turn helps maintain synchronization.
+<h4>Related Help Links:<h4>
+
+<a href = "res://intervaladjust"> Interval Adjusting</a><br>
+<a href = "res://silentinterval" >Silent Interval</a><br>
+<h4>Other Help Links:<h4>
+<a href = "res://TcpPacketDelay" >TCP Packet Delay</a>.<br>
+<a href = "res://main" >Covert Channel General</a><br>

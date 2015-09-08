@@ -1,0 +1,16 @@
+<body bgcolor="FFFFCC"></body>
+<h3>Message TimeOut Help</h3><br>
+it is the time between two continues packets that represent a reset of the comunication.
+For example if the Message TimeOut time is 560ms and the <a href = "res://timmingerror" >Timming Error</a> is 80ms then, 
+we rerpresent a comunication reset for each two continues packages that the space time
+is more than 480ms.
+
+For more error resistance the Message Timeout must be at least great than the sum of <a href = "res://onebitdelay" >One Bit Delay</a>  and double of <a href = "res://timmingerror" >Timming Error</a>.
+<br> Message Timeout > One Bit Delay + 2 * Timming Error.
+<h4>Related Help Links:<h4>
+<a href = "res://zerobitdelay" >Zero Bit Delay</a>.<br>
+<a href = "res://onebitdelay" >One Bit Delay</a>.<br>
+<a href = "res://timmingerror" >Timming Error</a>.<br>
+<h4>Other Help Links:<h4>
+<a href = "res://TcpPacketDelay" >TCP Packet Delay</a>.<br>
+<a href = "res://main" >Covert Channel General</a><br>

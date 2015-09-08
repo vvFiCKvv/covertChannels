@@ -1,0 +1,28 @@
+<body bgcolor="FFFFCC"></body>
+<h3>Interval Adjusting Help</h3><br>
+This is a method to solve Synchronization Problem.
+Rather than slow down the transmission by introducing
+silent periods in which no transfer occurs, the channel can
+adapt to the changes gradually as the network conditions
+change. In our interval adjusting scheme, the receiver closely
+monitors the time each packet arrives and compares it to the
+projected ideal case (the expected arrival time of the next
+packet) based on the current timing interval. Comparing the
+two, a delta is computed, which is the deviation between the
+ideal and actual times. The receiver then simply adds this
+value to its timing interval and adjusts its clock for the next
+arriving packet. Note that delta can be positive or negative,
+depending on whether the packet arrived early or late. This
+scheme is most useful when there is an incremental change
+in the network conditions that persists for longer than the
+lifetime of a single packet. It can however lead to errors
+if the change in the network delay is greater than 50% of
+the timing interval.
+
+<h4>Related Help Links:<h4>
+
+<a href = "res://startofframe" >midle Start Of Frame</a><br>
+<a href = "res://silentinterval" >Silent Interval</a><br>
+<h4>Other Help Links:<h4>
+<a href = "res://TcpPacketDelay" >TCP Packet Delay</a>.<br>
+<a href = "res://main" >Covert Channel General</a><br>
